@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In | GOAT</title>
+
+   <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(
+      rgba(44, 62, 80, 0.9),
+      rgba(44, 62, 80, 0.9)
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== NAVBAR ===== */
+  nav {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: center;   /* center items horizontally */
+    align-items: center;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav .logo {
+    position: absolute;
+    left: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #f39c12;
+  }
+
+  /* ===== SIGN IN BOX ===== */
+  .signin-box {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    margin: auto;            /* center vertically & horizontally */
+    margin-top: 120px;       /* space below navbar */
+  }
+
+  .signin-box h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+
+  .signin-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .signin-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .signin-box button:hover {
+    background-color: #e67e22;
+  }
+
+  .signin-box p {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .signin-box a {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .signin-box a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</head>
+
+<body>
+
+    <nav>
+  <div class="logo">GOAT</div>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+  </ul>
+</nav>
+
+
+  <div class="signin-box">
+    <h1>GOAT Sign In</h1>
+
+    <form>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+
+      <button type="submit">Sign In</button>
+    </form>
+
+    <p>
+      Don’t have an account?
+      <a href="sup.html">Sign Up</a>
+    </p>
+  </div>
+
+</body>
+</html>

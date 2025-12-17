@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Slot | GOAT</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:#ecf0f1;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  background:#2c3e50;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+}
+
+.logo{
+  color:#e67e22;
+  font-size:24px;
+  font-weight:bold;
+}
+
+.nav-links{
+  display:flex;
+  gap:25px;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+}
+
+.nav-links a:hover{
+  color:#f39c12;
+}
+
+.auth-btn{
+  background:#f39c12;
+  border:none;
+  padding:8px 18px;
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* ===== CONTENT ===== */
+.container{
+  max-width:900px;
+  background:white;
+  margin:40px auto;
+  padding:30px;
+  border-radius:8px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container h1{
+  color:#2c3e50;
+}
+
+.price{
+  color:#f39c12;
+  font-size:18px;
+  margin:10px 0;
+  font-weight:bold;
+}
+
+.slots{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:15px 0;
+}
+
+.slot{
+  padding:10px 14px;
+  border:none;
+  border-radius:5px;
+}
+
+.available{
+  background:#27ae60;
+  color:white;
+}
+
+.booked{
+  background:#bdc3c7;
+}
+
+.book-btn{
+  width:100%;
+  padding:12px;
+  background:#f39c12;
+  border:none;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">GOAT</div>
+
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="ad.html">Advertisement</a>
+    <a href="tour.html">Tournaments</a>
+    <a href="about.html">About</a>
+  </div>
+
+  <a href="sin.html" class="auth-btn">Sign In</a>
+   </nav>
+
+<div class="container">
+  <h1>Pro Turf Cricket</h1>
+  <p><b>Location:</b> Surat</p>
+  <p><b>Facilities:</b> Lights, Parking, Drinking Water</p>
+
+  <div class="price">₹900 / hour</div>
+
+  <label><b>Select Date:</b></label><br>
+  <input type="date">
+
+  <h3>Available Slots</h3>
+  <div class="slots">
+    <button class="slot available">6–7 AM</button>
+    <button class="slot available">7–8 AM</button>
+    <button class="slot booked">8–9 AM</button>
+    <button class="slot available">9–10 AM</button>
+  </div>
+
+  <button class="book-btn">Confirm Booking</button>
+</div>
+
+</body>
+</html>

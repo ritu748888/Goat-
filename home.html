@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Box Cricket Home</title>
+   <style>
+  /* Basic reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    background-color: #ecf0f1; /* light neutral background */
+  }
+
+  /* Navbar styling */
+  nav {
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e67e22;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #f39c12;
+  }
+
+  nav .signin-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+
+  nav .signin-btn:hover {
+    background-color: #e67e22;
+  }
+
+  /* Hero section */
+  .hero {
+    background:
+      linear-gradient(
+        rgba(44, 62, 80, 0.7),
+        rgba(44, 62, 80, 0.7)
+      ),
+      url("bc.png") no-repeat center bottom;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero .cta-btn {
+    background-color: #f39c12;
+    border: none;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .hero .cta-btn:hover {
+    background-color: #e67e22;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+  }
+</style>
+
+ </head>
+ <body>
+   <!-- Navbar -->
+   <nav>
+     <div class="logo">GOAT</div>
+     <ul>
+       <li><a href="home.html">Home</a></li>
+       <li><a href="ad.html">Advertisement</a></li>
+       <li><a href="tour.html">Tournaments</a></li>
+       <li><a href="about.html">About</a></li>
+     </ul>
+     <a href="sin.html" class="signin-btn">Sign In</a>
+   </nav>
+
+
+   <!-- Hero Section -->
+   <section class="hero">
+     <h1>Welcome to Box Cricket Arena</h1>
+     <p>Join the ultimate cricket experience with your friends and players!</p>
+     <a href="search.html" class="cta-btn">Get Started</a>
+   </section>
+
+
+   <!-- Footer -->
+   <footer>&copy; 2025 BoxCricket. All rights reserved.</footer>
+ </body>
